@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+        // Add the Esri public Maven repository
+        maven {
+            url 'https://esri.jfrog.io/artifactory/arcgis'
+        }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        // Add the Esri public Maven repository
+        maven {
+            url 'https://esri.jfrog.io/artifactory/arcgis'
+        }
+    }
+}
+
+rootProject.name = "arcgis-for-android-example"
+include ':app'
+
